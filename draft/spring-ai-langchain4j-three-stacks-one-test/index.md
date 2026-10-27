@@ -185,7 +185,8 @@ brings a JSON-schema generator, a tokenizer and Reactor along with it, none of
 which this use case touches.
 
 Even hedged this way, the shape is clear: Quarkus produces the smallest module and
-starts fastest, Spring AI is compact in code but the heaviest in dependencies, and
+starts fastest, Spring AI is compact in code but carries the most dependencies of the two
+libraries on Spring Boot (106 jars to LangChain4j's 49), and
 LangChain4j on Boot sits close to Spring AI, the same three files with a few extra
 jars for its starter.
 
